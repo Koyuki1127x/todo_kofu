@@ -1,6 +1,6 @@
 #include <boost/version.hpp>
 #include <iostream>
-#include <crow/app.h>
+#include <crow/ci_map.h>
 
 int main() {
     std::cout << "Boost version: " << BOOST_LIB_VERSION << std::endl;
