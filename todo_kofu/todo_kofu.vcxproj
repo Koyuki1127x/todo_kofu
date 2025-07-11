@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\b25a0445\OneDrive - TCS-G\デスクトップ\boost_1_88_0;C:\Users\b25a0445\OneDrive - TCS-G\デスクトップ\Crow-master\Crow-master\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,44 +127,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\app.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\ci_map.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\common.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\compression.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\exceptions.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_connection.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_parser_merged.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_request.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_response.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_server.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\json.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\logging.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middleware.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\cookie_parser.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\cors.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\session.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\utf-8.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middleware_context.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\mime_types.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\multipart.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\multipart_view.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\mustache.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\parser.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\query_string.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\returnable.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\routing.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\settings.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\socket_acceptors.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\socket_adaptors.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\task_timer.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\TinySHA1.hpp" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\utility.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\version.h" />
-    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\websocket.h" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="test_boost.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\app.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\ci_map.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\common.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\compression.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\exceptions.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\http_connection.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\http_parser_merged.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\http_request.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\http_response.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\http_server.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\json.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\logging.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middleware.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middlewares\cookie_parser.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middlewares\cors.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middlewares\session.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middlewares\utf-8.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\middleware_context.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\mime_types.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\multipart.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\multipart_view.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\mustache.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\parser.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\query_string.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\returnable.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\routing.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\settings.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\socket_acceptors.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\socket_adaptors.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\task_timer.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\TinySHA1.hpp" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\utility.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\version.h" />
+    <ClInclude Include="..\..\Crow-master\Crow-master\include\crow\websocket.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
