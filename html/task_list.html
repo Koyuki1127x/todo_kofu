@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My ToDo App</title>
+    <link rel="stylesheet" href="../css/task_list.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🗂️ My ToDo App</h1>
+    </header>
+
+    <div class="app">
+      <aside class="sidebar">
+        <h2>メニュー</h2>
+        <ul>
+          <li class="active">📋 タスク</li>
+          <li>📅 カレンダー</li>
+          <li>⚙️ 設定</li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <div class="task-header">
+          <h2>今日のタスク</h2>
+          <button id="new-task-btn">＋ 新しいタスク</button>
+        </div>
+
+        <ul id="task-list" class="task-list">
+          <!-- タスクがここに表示される -->
+        </ul>
+      </main>
+    </div>
+
+    <script>
+      const list = document.getElementById("task-list");
+      const btn = document.getElementById("new-task-btn");
+
+      btn.addEventListener("click", () => {
+        const text = prompt("タスクを入力してね！");
+        if (text && text.trim() !== "") {
+          const li = document.createElement("li");
+          li.className = "task-item";
+          li.innerHTML = `
+          <label>
+            <input type="checkbox" />
+            <span class="task-text">${text}</span>
+          </label>
+          <button class="delete">🗑</button>
+        `;
+          li.querySelector(".delete").onclick = () => li.remove();
+          li.querySelector("input").onchange = (e) => {
+            li.classList.toggle("completed", e.target.checked);
+          };
+          list.appendChild(li);
+        }
+      });
+    </script>
+  </body>
+</html>
