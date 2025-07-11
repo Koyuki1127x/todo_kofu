@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c47a1bfc-b934-474d-a816-9064d6da1757}</ProjectGuid>
+    <RootNamespace>todokofu</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PublicIncludeDirectories>C:\Users\b25a0445\Downloads\Crow-master\Crow-master\include</PublicIncludeDirectories>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\app.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\ci_map.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\common.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\compression.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\exceptions.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_connection.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_parser_merged.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_request.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_response.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\http_server.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\json.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\logging.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middleware.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\cookie_parser.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\cors.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\session.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middlewares\utf-8.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\middleware_context.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\mime_types.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\multipart.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\multipart_view.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\mustache.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\parser.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\query_string.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\returnable.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\routing.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\settings.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\socket_acceptors.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\socket_adaptors.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\task_timer.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\TinySHA1.hpp" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\utility.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\version.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Crow-master\Crow-master\include\crow\websocket.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
